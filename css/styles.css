@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+body {
+  border-style: solid;
+  border-color: rgb(58, 96, 115);
+}
+
+.main-wrapper .header {
+  background-color: rgb(22, 34, 42);
+  background-image: linear-gradient(to right, rgb(58, 96, 115), rgb(22, 34, 42));
+  padding-bottom: 3%;
+}
+.main-wrapper .header h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5%;
+}
+
+slot {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .section .columns {
+  -moz-column-count: 4;
+       column-count: 4;
+}
+.container .section .columns .column1 .card-content .media-content {
+  display: inline;
+}
+.container .section .columns .column1 .card-content .media-content .title {
+  font-family: Bitter;
+  display: block;
+  font-weight: bold;
+}
+.container .section .columns .column1 .card-content .media-content .sub-title {
+  font-style: italic;
+  padding-bottom: 2%;
+}
+.container .section .columns .column1 .card-content .media-content .button {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-style: solid;
+  padding-bottom: 0.1%;
+}/*# sourceMappingURL=styles.css.map */

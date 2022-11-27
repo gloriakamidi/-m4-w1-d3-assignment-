@@ -1,20 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
-
-//Colors:
-/*---------
-rgb(255,255,255)
-rgb(0,0,0)
-rgba(0,0,0,0.5)
-rgba(0,0,0,0.24)
-rgb(22, 34, 42)
-rgb(58, 96, 115)
-
-
-//Fonts:
-Bitter
-FontAwesome
-
-----------*/
+@import "variables.scss";
 
 * {
   margin: 0;
@@ -24,3 +9,63 @@ FontAwesome
 }
 
 $max-width: 80em;
+body {
+  border-style: solid;
+  border-color: $color6;
+}
+
+  .main-wrapper { 
+  .header { 
+    background-color: $color5;
+    background-image: linear-gradient(to right, $color6, $color5);
+    padding-bottom: 3%;
+    //text-align: center;
+    h1{
+      color: $color1;
+      text-align: center;
+      padding-top: 5%;
+    }
+  }
+}
+slot {
+  text-align: center;
+}
+  
+.container{
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ .section{
+    .columns{
+      column-count: 4;
+      .column1{
+          .card-content{
+            .media-content{
+              display: inline;
+              .title{
+                font-family: $font1;
+                display: block;
+                font-weight: bold; 
+              }
+              .sub-title{
+                font-style: italic;
+                padding-bottom: 2%;
+              }
+              .button {
+                 color: $color2;
+                 text-align: center;
+                 border-style: solid;
+                 padding-bottom: 0.1%;
+                 
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
